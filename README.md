@@ -17,9 +17,11 @@ The dataset used for this project is derived from Netflix and contains informati
 - **listed_in:** Genres/categories of the show.
 - **description:** Description of the show.
 
+![netflix_data_rawdataset](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/54a6d9d3-5eac-4a1c-acdc-128e72ace5ec)
+
+
 ## Project Steps
 ### 1. Data Import and Transformation
-**Tools Used:** Power Query in Power BI
 - **Import Data:** Loaded the raw data from a CSV file ('netflix_titles.csv') into Power BI.
 - **Transform Data:**
   - **Split Columns:** Split the 'country' and 'listed_in' coulumns by delimter to handle multiple values
@@ -28,7 +30,6 @@ The dataset used for this project is derived from Netflix and contains informati
   - **Data Cleaning:** Removed duplicates, handled missing values, renamed columns, and ensured data types were correctly set
 
 ### 2. Data Modeling
-**Tools Used:** Power BI Data Model
 - **Fact Table:** Created a fact table 'FACT-netflix-catalog' with only 1 unique entry per 'show_id'
 - **Dimension Tables:**
   - **'DIM-region':** Contains unique country id, name, and region
@@ -46,7 +47,6 @@ The dataset used for this project is derived from Netflix and contains informati
 In the original dataset, each unique 'show_id' could be listed to multiple countries and categories. Because of this, I decided to utilize Bridge Tables to overcome the many-to-many relationships of  Region and Category. 
 
 ### 3. Data Analysis and Measures
-**Tools Used:** DAX (Data Analysis Expressions)
 - **Measures Created:**
   - **Average Measures:**
     - **Average Movie Duration:** Calculates the average movie duration in minutes
@@ -67,7 +67,48 @@ In the original dataset, each unique 'show_id' could be listed to multiple count
       ![netflix_dax_cumulativegrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/bdca3966-abb6-4bde-b0d1-942034ea3b6f)
     - **RankByGrowth:** Ranks the DIM-region countries by the 'CumulativeGrowth' measure above
 
-### 4. Data Visualization and Report
+### 4. Data Visualizations and Report
+This report consists of several pages, each designed to provide insights into different aspects of the Netflix Catalog Data. Below is a detailed description of important features and purposes of each report page.
+>[!Note]
+>Due to limitations in the raw data, this report is analyzing the Netflix catalog from 2015-2021. Because of this, I themed the report as if I created this report in June of 2021.
+
+- **Report Pages Created:**
+  - **Overview:**
+    - The purpose of this page was to give a high-level overview of the dataset
+    - Slicers were added for all of the major filtering attributes (Content Type, Country, Genre, Year, Month)
+    - Navigation buttons were added for all of the report pages
+   ![netflix_report_overview](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/208f954c-7301-4efa-9ea5-a4798156915b)
+  - **Geographical Analysis:**
+    - **Map Visualization:** Displays the number of content releases by country. The color of the hotspot indicates the volume of content released in in each country
+    - **Content Releases of Top 5 Countries:** This chart shows the number of releases per year for the top 5 countries
+    - **Production Investment for the Top 5 Growing Markets:** This chart displays the number of releases over time for the top 5 countries with increasing growth. This is to identify emerging markets and regions with growing production investment
+  ![netflix_report_geographical](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/a62162d9-3bcc-456e-b02e-7d8c95c9b329)
+  - **Genre Analysis:**
+    - **Top 10 Genres:** This chart is to show the distribution of releases and identify dominant genres
+    - **Content Released for Top 10 Genres:** This chart displays the number of releases per genre over time to understand how preferences may change with time
+    - **Production Investment for the Top 5 Growing Categories:** This chart displays the number of releases over time for the top 5 categories with increasing growth. This is to identify emerging markets and categories with growing production investment
+  ![netflix_data_genre](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/4ef9940f-cec6-4b36-8549-6ea0f8cbd865)
+  - **Content Analysis:**
+    - **Total Content by Rating Categories:** This chart is to show the distribution of content by their Maturity Rating
+    - **Average Movie Duration by Year:** This chart is to show the average movie duration (minutes) to understand how movie length may change with time
+    - **Average TV Seasons by Year:** This chart is to show the average TV Seasons to identify changes over time
+    - **Total Content by Month and Type:** This chart break down the number of releases per month. This visualization can further be drilled down to week number & day of the week
+    ![netflix_report_content](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/e7851f90-21da-449e-9cbb-ad73b2229bb0)
+
+## Future Improvements
+While I am satisfied for what I was able to create, below are further modifications I would make if allocated more time:
+- Optimize Report Pages and underlying DAX measures
+  - Report Model could be further imporoved to allow for a more efficient and scalable model
+- Improve Slicers/Filters on Reporting page
+  - Syncing these visuals across pages and tailoring the report to a set target audience would allow for a more investigative and thorough findings
+- Further Modifcations to Raw Data
+  - The original dataset had a significant amount of discrepancies and errors, but I believe this could be further improved if I had access to the raw data source
+  - Additionally I limited myself to only utlize PowerQuery for this cleanup as I wanted to spend more time with the tool, but it may have been more efficient to just edit the data in excel
+- Add more statistical analysis themed visualization
+  - With the raw data having so many discrepancies, I was hesitant to make predictive or more analytical visualizations that would skew findings
+
+## Conclusion
+This Power BI report provides a Descriptive analysis of the Netflix catalog, highlighting content, geographical, and genre analysis. The project demonstrates my ability to handle end-to-end data analysis tasks, from data import and transformation to modeling and visualization. This work showcases my skills in using Power BI to derive actionable insights from data, making it a valuable asset for a role in data analysis and data science.   
 
 
 
