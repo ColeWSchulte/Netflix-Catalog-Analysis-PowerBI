@@ -55,10 +55,12 @@ In the original dataset, each unique 'show_id' could be listed to multiple count
     - **Count of show_id - running total:** Calculates a running total of the count of 'show_id' and displays 0 if no values are found
       ![netflix_dax_runningTotal](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/cea12454-6b35-4ae6-beca-646a3a172466)
     - **Total Content:** Calculates the count of all show_id and displays 0 if no values are found
+      ![netflix_dax_totalcontent](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/f7f0ba2f-f87c-46a7-96b3-2981051f5b93)
     - **Total Movies:** Calculates the count of all Movies and displays 0 if no values are found
     - **Total TV Shows:** Calculates the count of all TV Shows and displays 0 if no values are found
   - **Time Measures:**
-    - **YearlyReleases** Calculates the count of content released based on the 'DIM-addedDate'[Year] 
+    - **YearlyReleases** Calculates the count of content released based on the 'DIM-addedDate'[Year]
+      ![netflix_dax_yearlyreleases](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/440ddc1b-a8d6-47d0-b857-e62c69b5fbe3)
   - **Growth Measures:**
     - **YearlyGrowth:** Calculates the yearly growth by comparing CurrentYearReleases and PreviousYearReleases variables
       ![netflix_dax_yearlygrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/ea8a2663-e8a5-41dd-bcde-915165d26336)
@@ -66,6 +68,8 @@ In the original dataset, each unique 'show_id' could be listed to multiple count
     - **CumulativeGrowth:** Calculates the total sum of positive yearly growth values over the dataset's period
       ![netflix_dax_cumulativegrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/bdca3966-abb6-4bde-b0d1-942034ea3b6f)
     - **RankByGrowth:** Ranks the DIM-region countries by the 'CumulativeGrowth' measure above
+      ![netflix_dax_rankbygrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/87ee1583-0dcb-4839-973f-ffd02e528770)
+
 
 ### 4. Data Visualizations and Report
 This report consists of several pages, each designed to provide insights into different aspects of the Netflix Catalog Data. Below is a detailed description of important features and purposes of each report page.
