@@ -9,7 +9,7 @@ The dataset used for this project is derived from Netflix and contains informati
 - **title:** Title of the show.
 - **director:** Director of the show.
 - **cast:** Cast of the show.
-- **country:** Countries where the show was produced.
+- **country:** Countries where the show was added.
 - **date_added:** Date when the show was added to the Netflix catalog.
 - **release_year:** Year when the show was released.
 - **rating:** Rating of the show.
