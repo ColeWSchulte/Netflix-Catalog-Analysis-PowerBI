@@ -53,22 +53,22 @@ In the original dataset, each unique 'show_id' could be listed to multiple count
     - **Average TV Seasons:** Calculates the average number of TV Seasons 
   - **Count Measures:**
     - **Count of show_id - running total:** Calculates a running total of the count of 'show_id' and displays 0 if no values are found
-      ![netflix_dax_runningTotal](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/cea12454-6b35-4ae6-beca-646a3a172466)
+![netflix_dax_runningTotal](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/cea12454-6b35-4ae6-beca-646a3a172466)
     - **Total Content:** Calculates the count of all show_id and displays 0 if no values are found
-      ![netflix_dax_totalcontent](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/f7f0ba2f-f87c-46a7-96b3-2981051f5b93)
+![netflix_dax_totalcontent](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/f7f0ba2f-f87c-46a7-96b3-2981051f5b93)
     - **Total Movies:** Calculates the count of all Movies and displays 0 if no values are found
     - **Total TV Shows:** Calculates the count of all TV Shows and displays 0 if no values are found
   - **Time Measures:**
     - **YearlyReleases** Calculates the count of content released based on the 'DIM-addedDate'[Year]
-      ![netflix_dax_yearlyreleases](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/440ddc1b-a8d6-47d0-b857-e62c69b5fbe3)
+![netflix_dax_yearlyreleases](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/440ddc1b-a8d6-47d0-b857-e62c69b5fbe3)
   - **Growth Measures:**
     - **YearlyGrowth:** Calculates the yearly growth by comparing CurrentYearReleases and PreviousYearReleases variables
-      ![netflix_dax_yearlygrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/ea8a2663-e8a5-41dd-bcde-915165d26336)
+![netflix_dax_yearlygrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/ea8a2663-e8a5-41dd-bcde-915165d26336)
     - **PositiveGrowth:** Evaluates if the 'YearlyGrowth" measure is greater than 0 for count and identification purposes
     - **CumulativeGrowth:** Calculates the total sum of positive yearly growth values over the dataset's period
-      ![netflix_dax_cumulativegrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/bdca3966-abb6-4bde-b0d1-942034ea3b6f)
+![netflix_dax_cumulativegrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/bdca3966-abb6-4bde-b0d1-942034ea3b6f)
     - **RankByGrowth:** Ranks the DIM-region countries by the 'CumulativeGrowth' measure above
-      ![netflix_dax_rankbygrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/87ee1583-0dcb-4839-973f-ffd02e528770)
+![netflix_dax_rankbygrowth](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/87ee1583-0dcb-4839-973f-ffd02e528770)
 
 
 ### 4. Data Visualizations and Report
@@ -81,23 +81,23 @@ This report consists of several pages, each designed to provide insights into di
     - The purpose of this page was to give a high-level overview of the dataset
     - Slicers were added for all of the major filtering attributes (Content Type, Country, Genre, Year, Month)
     - Navigation buttons were added for all of the report pages
-   ![netflix_report_overview](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/208f954c-7301-4efa-9ea5-a4798156915b)
+![netflix_report_overview](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/208f954c-7301-4efa-9ea5-a4798156915b)
   - **Geographical Analysis:**
     - **Map Visualization:** Displays the number of content releases by country. The color of the hotspot indicates the volume of content released in in each country
     - **Content Releases of Top 5 Countries:** This chart shows the number of releases per year for the top 5 countries
     - **Production Investment for the Top 5 Growing Markets:** This chart displays the number of releases over time for the top 5 countries with increasing growth. This is to identify emerging markets and regions with growing production investment
-  ![netflix_report_geographical](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/a62162d9-3bcc-456e-b02e-7d8c95c9b329)
+![netflix_report_geographical](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/a62162d9-3bcc-456e-b02e-7d8c95c9b329)
   - **Genre Analysis:**
     - **Top 10 Genres:** This chart is to show the distribution of releases and identify dominant genres
     - **Content Released for Top 10 Genres:** This chart displays the number of releases per genre over time to understand how preferences may change with time
     - **Production Investment for the Top 5 Growing Categories:** This chart displays the number of releases over time for the top 5 categories with increasing growth. This is to identify emerging markets and categories with growing production investment
-  ![netflix_data_genre](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/4ef9940f-cec6-4b36-8549-6ea0f8cbd865)
+![netflix_data_genre](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/4ef9940f-cec6-4b36-8549-6ea0f8cbd865)
   - **Content Analysis:**
     - **Total Content by Rating Categories:** This chart is to show the distribution of content by their Maturity Rating
     - **Average Movie Duration by Year:** This chart is to show the average movie duration (minutes) to understand how movie length may change with time
     - **Average TV Seasons by Year:** This chart is to show the average TV Seasons to identify changes over time
     - **Total Content by Month and Type:** This chart break down the number of releases per month. This visualization can further be drilled down to week number & day of the week
-    ![netflix_report_content](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/e7851f90-21da-449e-9cbb-ad73b2229bb0)
+![netflix_report_content](https://github.com/ColeWSchulte/Netflix-Catalog-Analysis/assets/140651727/e7851f90-21da-449e-9cbb-ad73b2229bb0)
 
 ## Future Improvements
 While I am satisfied for what I was able to create, below are further modifications I would make if allocated more time:
