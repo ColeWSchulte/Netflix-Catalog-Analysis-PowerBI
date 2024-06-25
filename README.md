@@ -102,12 +102,12 @@ This report consists of several pages, each designed to provide insights into di
 ## Future Improvements
 While I am satisfied for what I was able to create, below are further modifications I would make if allocated more time:
 - Optimize Report Pages and underlying DAX measures
-  - Report Model could be further imporoved to allow for a more efficient and scalable model
+  - Report Model could be further improved to allow for a more efficient and scalable model
 - Improve Slicers/Filters on Reporting page
   - Syncing these visuals across pages and tailoring the report to a set target audience would allow for a more investigative and thorough findings
-- Further Modifcations to Raw Data
-  - The original dataset had a significant amount of discrepancies and errors, but I believe this could be further improved if I had access to the raw data source
-  - Additionally I limited myself to only utlize PowerQuery for this cleanup as I wanted to spend more time with the tool, but it may have been more efficient to just edit the data in excel
+- Further Modifications to Raw Data
+  - The original dataset had a significant number of discrepancies and errors, but I believe this could be further improved if I had access to the raw data source
+  - Additionally I limited myself to only utilize PowerQuery for this cleanup as I wanted to spend more time with the tool, but it may have been more efficient to just edit the data in excel
 - Add more statistical analysis themed visualization
   - With the raw data having so many discrepancies, I was hesitant to make predictive or more analytical visualizations that would skew findings
 
